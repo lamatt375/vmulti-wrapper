@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Release|x64">
@@ -33,8 +33,8 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(SolutionDir)artifacts\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)artifacts\obj\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>C:\ClinVisionLab\vmulti-artifacts\modern-ewdk\package\</OutDir>
+    <IntDir>C:\ClinVisionLab\vmulti-artifacts\modern-ewdk\obj\vmulti\$(Configuration)\$(Platform)\</IntDir>
     <TargetExt>.sys</TargetExt>
     <RunCodeAnalysis>false</RunCodeAnalysis>
     <EnableDeployment>false</EnableDeployment>
@@ -74,3 +74,4 @@
 
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
 </Project>
+
