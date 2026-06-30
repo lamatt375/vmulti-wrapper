@@ -1,0 +1,7 @@
+*
+!.gitignore
+!README.md
+!source-inventory.md
+!vmulti-ewdk.sln
+!sys/
+!sys/vmulti.vcxproj
