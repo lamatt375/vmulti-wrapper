@@ -22,3 +22,15 @@ IntDir = C:\ClinVisionLab\vmulti-artifacts\modern-ewdk\obj\vmulti\$(Configuratio
 ```
 
 Signing remains inactive by design: there are no certificate, SignTool, package-signing, deployment, post-build, StampInf, or Inf2Cat hooks in this wrapper. Before any build approval, the EWDK project should still be inspected/evaluated to prove no signing target is active. Do not add signing material or run signing commands in the wrapper slice.
+
+## Signing-off fix 2026-06-30
+
+The wrapper now explicitly disables WDK signing/test-sign behavior in the project file:
+
+```text
+SignMode = Off
+EnableTestSign = false
+EnableDeployment = false
+```
+
+This is still build-only preparation. Do not run SignTool, Inf2Cat, driver install/load, TESTSIGNING changes, or input/report-write tests until separately approved.

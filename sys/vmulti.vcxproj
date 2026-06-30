@@ -38,6 +38,8 @@
     <TargetExt>.sys</TargetExt>
     <RunCodeAnalysis>false</RunCodeAnalysis>
     <EnableDeployment>false</EnableDeployment>
+    <SignMode>Off</SignMode>
+    <EnableTestSign>false</EnableTestSign>
     <KMDF_VERSION_MAJOR>1</KMDF_VERSION_MAJOR>
     <KMDF_VERSION_MINOR>15</KMDF_VERSION_MINOR>
   </PropertyGroup>
